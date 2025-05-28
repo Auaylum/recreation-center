@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>База отдыха "Лесная сказка"</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, footer { background-color: #2e8b57; color: white; text-align: center; padding: 20px; }
+    nav { background-color: #3cb371; padding: 10px; text-align: center; flex-wrap: wrap; }
+    nav a { margin: 0 10px; color: white; text-decoration: none; font-weight: bold; display: inline-block; padding: 5px; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    h2 { color: #2e8b57; }
+    .card { background: #f5f5f5; padding: 20px; margin: 15px 0; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    img { max-width: 100%; border-radius: 10px; margin-top: 10px; }
+    form { display: flex; flex-direction: column; gap: 10px; }
+    input, textarea, button { padding: 10px; font-size: 1em; border: 1px solid #ccc; border-radius: 5px; }
+    button { background-color: #2e8b57; color: white; border: none; cursor: pointer; }
+    button:hover { background-color: #246b45; }
+    @media (max-width: 600px) {
+      nav a { display: block; margin: 5px 0; }
+      section { padding: 20px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>База отдыха "Лесная сказка"</h1>
+  <p>Отдых на природе с комфортом</p>
+</header>
+
+<nav>
+  <a href="#about">О нас</a>
+  <a href="#rooms">Проживание</a>
+  <a href="#services">Услуги</a>
+  <a href="#prices">Цены</a>
+  <a href="#reviews">Отзывы</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<section id="about">
+  <h2>О нас</h2>
+  <p>Добро пожаловать на базу отдыха "Лесная сказка"! Мы находимся в живописном уголке природы, вдали от городской суеты.</p>
+  <img src="https://static.vl.ru/catalog/1718332788782_main.jpg" alt="Фото базы отдыха">
+</section>
+
+<section id="rooms">
+  <h2>Проживание</h2>
+
+  <div class="card">
+    <h3>Домик стандарт</h3>
+    <p>Уютный деревянный домик на 2–4 человека. Цена: 10 000 тг/ночь.</p>
+    <img src="https://otdyh-vko.kz//storage/4370/247788894-1035992680532537-682996212974672059-njpg.jpeg" alt="Домик стандарт">
+  </div>
+
+  <div class="card">
+    <h3>Семейный коттедж</h3>
+    <p>Просторный коттедж с кухней и баней. Цена: 20 000 тг/ночь.</p>
+    <img src="https://glampinginfo.ru/wp-content/uploads/2025/03/zaimka-uzaly.jpg" alt="Семейный коттедж">
+  </div>
+</section>
+
+<section id="services">
+  <h2>Услуги и развлечения</h2>
+  <ul>
+    <li>Русская баня</li>
+    <li>Рыбалка и катание на лодке</li>
+    <li>Пешие прогулки и экскурсии</li>
+    <li>Детская площадка</li>
+  </ul>
+</section>
+
+<section id="prices">
+  <h2>Цены</h2>
+  <p>Цены зависят от сезона. Позвоните нам или оставьте заявку через форму ниже.</p>
+</section>
+
+<section id="reviews">
+  <h2>Отзывы</h2>
+  <p>“Очень уютное место, дети были в восторге!” — Алия</p>
+  <p>“Природа потрясающая, обязательно приедем снова.” — Рустем</p>
+</section>
+
+<section id="contacts">
+  <h2>Контакты</h2>
+  <p>Телефон: +7 700 123 4567</p>
+  <p>Email: lesnayasказka@mail.kz</p>
+  <p>Адрес: Абайская область, недалеко от Семея</p>
+
+  <h3>Забронировать отдых</h3>
+  <form>
+    <input type="text" name="name" placeholder="Ваше имя" required>
+    <input type="tel" name="phone" placeholder="Телефон" required>
+    <input type="date" name="date" required>
+    <textarea name="message" placeholder="Комментарий (необязательно)"></textarea>
+    <button type="submit">Отправить заявку</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 База отдыха "Лесная сказка"</p>
+</footer>
+
+</body>
+</html>
